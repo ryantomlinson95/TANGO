@@ -13,11 +13,17 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container homebox">
-        <%= link_to image_tag("tangologo.png", size: '170x60', id: "logo"), '#' %>
+        <%= link_to image_tag("tangologo.png", size: '170x60', id: "logo"), '/' %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Projects", '#' %></li>
-            <li><%= link_to "Login", '#' %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to "My Projects", '/myprojects' %></li>
+          <li><%= link_to "All Projects", '/projects' %></li>
+          <li><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
+          <% else %>
+            <li><%= link_to "Projects", '/projects' %></li>
+            <li><%= link_to "Login", '/users/sign_in' %></li>
+          <% end %>
           </ul>
         </nav>
       </div>
@@ -31,7 +37,7 @@
       </small>
       <nav>
         <ul>
-          <li><%= link_to "About", '#' %></li>
+          <li><%= link_to "About", '/about' %></li>
           <li><%= link_to "Contact", '#' %></li>
         </ul>
       </nav>

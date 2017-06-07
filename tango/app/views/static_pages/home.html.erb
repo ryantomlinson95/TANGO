@@ -3,5 +3,29 @@
 
       <h2>a collaboration to help those who help others</h2>
 
-      <%= link_to "Sign Up", '#', class: "btn btn-lg btn-primary", id: "signupbtn" %>
+      <% if user_signed_in? %>
+      <%= link_to "My Projects", '/projects', class: "btn btn-lg btn-primary", id: "signupbtn" %>
+      <% else %>
+      <%= link_to "Log In", '/users/sign_in', class: "btn btn-lg btn-primary", id: "signupbtn" %>
+      <% end %>
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<div style="font-size:125%; color:#ffa500">
+Our goal is to facilitate collaboration between NGO's/non-profit organizations and developers to help with build portfolios and web-pages.
+
+<br><br>
+
+<b>NGO's:</b>
+NGO's can contact us <a href>here</a>.  From there, we will give you credentials to post projects to our site. Once your project is posted, developers can choose to create or join your project free of charge.
+
+<br><br>
+
+<b>Developers:</b>
+As a developer, if you interested in any of the posted projects, sign up above and add yourself! This is a great way to build your portfolio and get involved with the community.
+
+
+
+
 </div>
