@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :projects
 
-  get '/about', to 'static_pages#about'
+  get '/about', to: 'static_pages#about'
 
   devise_for :users
   devise_for :views
