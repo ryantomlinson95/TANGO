@@ -13,7 +13,7 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-        <%=image_tag("rsz_tangologo.png", size: '306x71')%>
+        <%= link_to image_tag("orange_area.png", size: '81x81', id: "logo"), '#' %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Projects", '#' %></li>
@@ -25,12 +25,16 @@
     <div class="container">
       <%= yield %>
     </div>
-    <div class="center jumbotron">
-      <h1>Welcome to Tango</h1>
-
-      <h2>Where it takes two to tango...</h2>
-
-      <%= link_to "Sign Up", '#', class: "btn btn-lg btn-primary" %>
-    </div>
+    <footer class="footer">
+      <small>
+        Tango, a site for Capital One Carbon 2017.
+      </small>
+      <nav>
+        <ul>
+          <li><%= link_to "About", '#' %></li>
+          <li><%= link_to "Contact", '#' %></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
