@@ -1,3 +1,5 @@
 # TANGO
 It takes two to tango.
-test
+
+Team Members:
+Ryan Tomlinson, Jeff Liao, Kayli Doll, Joy Kim, Chris Michel
