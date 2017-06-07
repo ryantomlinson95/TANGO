@@ -6,4 +6,8 @@ def about
 end
 
 
+
+def myprojects
+end
+
 end

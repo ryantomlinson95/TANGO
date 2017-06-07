@@ -6,10 +6,8 @@ Rails.application.routes.draw do
   devise_for :users
   devise_for :views
 
-
-  root "static_pages#home"
-
-
+root "static_pages#home"
+get "/myprojects", to: "static_pages#myprojects"
 
 
 end
