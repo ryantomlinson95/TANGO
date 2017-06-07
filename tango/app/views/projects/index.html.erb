@@ -1,14 +1,7 @@
-<div padding="0px" class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
-  <h3 class="w3-bar-item">Menu</h3>
-  <a href="/projects" class="w3-bar-item w3-button">All Projects</a>
-  <% if user_signed_in? %>
-    <a href="/myprojects" class="w3-bar-item w3-button">My Projects</a>
-  <% end %>
-</div>
+<% if user_signed_in? %>
+<% end %>
+
 <p id="notice"><%= notice %></p>
-
-
-<div style="margin-left:15%">
 
 <h1>Projects</h1>
 
@@ -17,7 +10,7 @@
     <tr>
       <th>Name</th>
       <th>Description</th>
-      <th>Githuburl</th>
+      <th>Github URL</th>
       <th>Progress</th>
       <th>Owner</th>
       <th colspan="3"></th>

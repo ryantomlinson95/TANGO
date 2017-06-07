@@ -3,5 +3,9 @@
 
       <h2>a collaboration to help those who help others</h2>
 
-      <%= link_to "Sign Up", '#', class: "btn btn-lg btn-primary", id: "signupbtn" %>
+      <% if user_signed_in? %>
+      <%= link_to "My Projects", '/projects', class: "btn btn-lg btn-primary", id: "signupbtn" %>
+      <% else %>
+      <%= link_to "Log In", '/users/sign_in', class: "btn btn-lg btn-primary", id: "signupbtn" %>
+      <% end %>
 </div>
