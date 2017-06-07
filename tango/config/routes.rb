@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
 
   root "static_pages#home"
+  get "/myprojects", to: "static_pages#myprojects"
 
 
 
