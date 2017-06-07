@@ -11,6 +11,26 @@
         <p class="alert"><%= alert %></p>
 
   <body>
-    <%= yield %>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%=image_tag("rsz_tangologo.png", size: '306x71')%>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Projects", '#' %></li>
+            <li><%= link_to "Login", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <div class="center jumbotron">
+      <h1>Welcome to Tango</h1>
+
+      <h2>Where it takes two to tango...</h2>
+
+      <%= link_to "Sign Up", '#', class: "btn btn-lg btn-primary" %>
+    </div>
   </body>
 </html>
