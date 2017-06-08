@@ -24,7 +24,7 @@
         <td><%= project.description %></td>
         <td>
         <% if project.githuburl %>
-        <%= link_to 'View', project.githuburl, :id => "button", :class => "btn" %>
+        <%= link_to 'View', project.githuburl, :id => "button", :class => "btn", :style => "text-decoration: none;" %>
         <% else %>
         None
         <% end %>
