@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   resources :projects
 
-  get '/about', to: 'static_pages#about'
+match '/contacts',     to: 'contacts#new',             via: 'get'
+resources "contacts", only: [:new, :create]
 
   devise_for :users
   devise_for :views
