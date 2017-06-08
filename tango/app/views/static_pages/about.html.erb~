@@ -1,0 +1,18 @@
+<h1> About Page </h1>
+<p class="bg-primary">
+Our goal is to facilitate collaboration between NGO's/non-profit organizations and developers to help with build portfolios and web-pages.
+
+<br><br>
+
+<b>NGO's:</b>
+NGO's can contact us at 1234567890 or tango@tango.com to create an account.  From there, we will give you credentials to post projects to our site. Once your project is posted, developers can choose to create or join your project free of charge.
+
+<br><br>
+
+<b>Developers:</b>
+As a developer, if you interested in any of the posted projects, <a href="/users/sign_up">sign up here</a> and add yourself! This is a great way to build your portfolio and get involved with the community.
+
+
+
+
+</p>

@@ -1,39 +1,27 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-
-#button {
-  color: #ffffff;
-  background-color: #ffa500;
-  border: none;
-  alignment: center;
-}
 /*flash*/
 
-.alert-error {
+.error {
 background-color: #f2dede;
 border-color: #eed3d7;
 color: #b94a48;
 text-align: left;
 }
 
-.alert-alert {
+.alert {
 background-color: #f2dede;
 border-color: #eed3d7;
 color: #b94a48;
 text-align: left;
 }
 
-.alert-success {
+.success {
 background-color: #dff0d8;
 border-color: #d6e9c6;
 color: #468847;
 text-align: left;
 }
 
-.alert-notice {
+.notice {
 background-color: #dff0d8;
 border-color: #d6e9c6;
 color: #468847;
