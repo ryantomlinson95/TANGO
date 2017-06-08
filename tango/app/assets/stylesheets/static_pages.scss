@@ -2,14 +2,51 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.body {
+	 font-family: Impact, Charcoal, sans-serif;	font-style: normal;
 
+}
 
-#button {
+.goal {
+	alignment: center;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#takestwo {
+	font-size:40pt;
+ font-family: Impact, Charcoal, sans-serif;	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 45.4px;
+	margin-top: 10px;
+	}
+
+#developers h1, #NGOs h1, .goal h1 {
+	color: #ffa500;
+}
+
+.btn {
   color: #ffffff;
   background-color: #ffa500;
   border: none;
   alignment: center;
+  &:hover {
+    transition: 250ms ease-in-out;
+    background-color: #8c8c8c;
+    .btn {
+      background-color: #990000;
+      color: white;
+      border-color: #990000;
+      transition: 250ms ease-in-out;
+    }
+    }
 }
+
+
+
+
+
 /*flash*/
 
 .alert-error {
