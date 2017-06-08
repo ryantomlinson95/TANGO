@@ -22,7 +22,7 @@
   </div>
 
   <div class="field">
-    <%= form.label :githuburl unless @project.new_record? %>
+    <%= form.label "Github URL" unless @project.new_record? %>
     <%= form.text_field :githuburl, id: :project_githuburl unless @project.new_record? %>
   </div>
 
@@ -34,6 +34,11 @@
   <div class="field">
     <%= form.label :dev unless @project.new_record? %>
     <%= form.text_field :dev, id: :project_dev unless @project.new_record? %>
+  </div>
+
+<div class="field">
+    <%= form.label :contact if @project.new_record? %>
+    <%= form.text_field :contact, id: :project_contact if @project.new_record? %>
   </div>
 
   <div class="actions">
