@@ -5,22 +5,28 @@
     <tr>
       <th>Name</th>
       <th>Description</th>
-      <th>Githuburl</th>
+      <th>Github URL</th>
       <th>Progress</th>
-      <th>Owner</th>
+      <th>Dev</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% Project.all.each do |project| %>
-	  <% if project.user_id == current_user.id %>
+	  <% if project.user_id == current_user.id || project.dev == current_user.email %>
       <tr>
         <td><%= project.name %></td>
         <td><%= project.description %></td>
         <td><%= project.githuburl %></td>
-        <td><%= project.progress %></td>
-        <td><%= project.owner %></td>
+        <td>
+        <div class='progress progress-striped'>
+        <div class="progress-bar progress-bar-warning" role="progressbar" style="width: <%=project.progress%>%;">
+          <%=project.progress%>%
+        </div>
+      </div>
+      </td>
+        <td><%= project.dev %></td>
       </tr>
       <% end %>
     <% end %>
@@ -28,8 +34,14 @@
 </table>
 
 <br>
+
+<% if current_user.ngo? %>
 <div align="center" text-color="white">
 <%= link_to 'New Project', new_project_path, { :class=>"btn btn-default button", :id=>"button" } %>
 </div>
+<% end %>
+
+
+ 
 
 </div>

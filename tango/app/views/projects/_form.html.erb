@@ -12,28 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :project_name %>
+    <%= form.label :name  if @project.new_record?%>
+    <%= form.text_field :name, id: :project_name if @project.new_record? %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :project_description %>
+    <%= form.label :description if @project.new_record? %>
+    <%= form.text_area :description, id: :project_description if @project.new_record? %>
   </div>
 
   <div class="field">
-    <%= form.label :githuburl %>
-    <%= form.text_field :githuburl, id: :project_githuburl %>
+    <%= form.label :githuburl if @project.new_record? %>
+    <%= form.text_field :githuburl, id: :project_githuburl if @project.new_record? %>
   </div>
 
   <div class="field">
-    <%= form.label :progress %>
-    <%= form.number_field :progress, id: :project_progress %>
+    <%= form.label :progress if @project.new_record? %>
+    <%= form.number_field :progress, id: :project_progress if @project.new_record? %>
   </div>
 
   <div class="field">
-    <%= form.label :owner %>
-    <%= form.text_field :owner, id: :project_owner %>
+    <%= form.label :dev unless @project.new_record? %>
+    <%= form.text_field :dev, id: :project_dev unless @project.new_record? %>
   </div>
 
   <div class="actions">
