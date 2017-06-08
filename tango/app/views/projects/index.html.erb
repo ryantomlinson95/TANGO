@@ -40,7 +40,7 @@
       <td><%= project.dev %></td>
 
       <td>
-        <% if !current_user.ngo? && !project.dev %>
+        <% if user_signed_in? && !current_user.ngo? && !project.dev %>
           <%= link_to 'Tango', edit_project_path(project), :id => "button", :class => "btn" %>
         <% end %>
         </td>
