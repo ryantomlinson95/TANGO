@@ -22,13 +22,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :githuburl if @project.new_record? %>
-    <%= form.text_field :githuburl, id: :project_githuburl if @project.new_record? %>
+    <%= form.label :githuburl unless @project.new_record? %>
+    <%= form.text_field :githuburl, id: :project_githuburl unless @project.new_record? %>
   </div>
 
   <div class="field">
-    <%= form.label :progress if @project.new_record? %>
-    <%= form.number_field :progress, id: :project_progress if @project.new_record? %>
+    <%= form.label :progress unless @project.new_record? %>
+    <%= form.number_field :progress, id: :project_progress unless @project.new_record? %>
   </div>
 
   <div class="field">
