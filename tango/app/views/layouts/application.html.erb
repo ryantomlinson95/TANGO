@@ -21,8 +21,8 @@
           <li><%= link_to "All Projects", '/projects' %></li>
           <li><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
           <% else %>
-            <li><%= link_to "Projects", '/projects' %></li>
-            <li><%= link_to "Login", '/users/sign_in' %></li>
+            <li class="links"><%= link_to "Projects", '/projects' %></li>
+            <li class="links"><%= link_to "Login", '/users/sign_in' %></li>
           <% end %>
           </ul>
         </nav>
@@ -37,7 +37,7 @@
       </small>
       <nav>
         <ul>
-          <li><%= link_to "Contact", '/contacts' %></li>
+          <li class="links"><%= link_to "Contact", '/contacts' %></li>
         </ul>
       </nav>
     </footer>
