@@ -4,7 +4,7 @@
       <h2>a collaboration to help those who help others</h2>
 
       <% if user_signed_in? %>
-      <%= link_to "My Projects", '/projects', class: "btn btn-lg btn-primary", id: "signupbtn" %>
+      <%= link_to "All Projects", '/projects', class: "btn btn-lg btn-primary", id: "signupbtn" %>
       <% else %>
       <%= link_to "Sign Up", '/users/sign_up', class: "btn btn-lg btn-primary", id: "signupbtn" %>
       <% end %>
