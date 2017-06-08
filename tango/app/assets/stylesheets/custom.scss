@@ -26,6 +26,15 @@ textarea {
   margin-bottom: 10px;
 }
 
+.container {
+  padding: 0px;
+  max-width: 1050px;
+}
+.container-fluid {
+  max-width: 1050px;
+}
+
+
 .jumbotron {
   background-color: #ffc266;
   width: 400px;
@@ -35,7 +44,7 @@ textarea {
 
 .links:hover {
   text-decoration: none;
-  background-color: #ffc266; 
+  background-color: #ffc266;
 }
 
 .navbar {
@@ -119,4 +128,3 @@ footer ul li {
   float: left;
   margin-left: 15px;
 }
-
